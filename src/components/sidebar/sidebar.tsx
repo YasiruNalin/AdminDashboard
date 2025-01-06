@@ -1,6 +1,7 @@
 import './sidebar.css'
 import { SidebarData } from '../../menuData/menuData'
 import { useState } from 'react'
+
 const Sidebar = ({ setSelected }: { setSelected: (index: number) => void }) => {
     const[pageSelected,setPageSelected] = useState(0)
 
@@ -23,7 +24,7 @@ const Sidebar = ({ setSelected }: { setSelected: (index: number) => void }) => {
             <div className="Menu">
                 {SidebarData.map((item,index)=>{
                     return(
-                        <div className={pageSelected===index? "MenuItem active": "MenuItem"}
+                        <div className={pageSelected===index? "MenuItem activeL": "MenuItem"}
                         key = {index}
                         onClick={() => handleMenuClick(index)}
                         >

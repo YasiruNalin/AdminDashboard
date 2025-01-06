@@ -6,8 +6,137 @@
     padding-right: 1rem;
 }
 
-.CardContainer{
-    display: flex;
-    flex-direction:row;
-    justify-content: space-evenly;
+
+body {
+    font-family: 'Sans-Serif', Arial, Helvetica, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
 }
+
+
+
+h1 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.OrganizationCard {
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: auto;
+    height: auto;
+    text-align: center;
+    margin: 1rem 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.CardHeader {
+    display: flex; /* Enables flexbox */
+    flex-direction: column; /* Aligns items vertically */
+    align-items: center; /* Centers items horizontally */
+    justify-content: center; /* Centers items vertically */
+    gap: 1rem; /* Adds spacing between the logo and other content */
+    padding: 1rem; /* Optional padding */
+}
+
+.CardHeader img {
+    display: block;
+    padding: 1rem;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    border: 2px solid var(--atomblue);
+
+}
+
+.CardBody label {
+    display: block;
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+    margin-left: calc((100% - 70%) / 2);
+    text-align: left;
+    font-family: sans-serif;
+
+}
+
+.CardBody input,
+.CardBody textarea {
+    width: 70%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0.7rem;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.CardBody input:disabled,
+.CardBody textarea:disabled {
+    background-color:var(--atomtextbackgroung);
+    font-weight: bold;
+    font-family: sans-serif;
+    color:black;
+}
+
+.CardFooter button {
+    padding: 0.7rem 1.5rem;
+    font-size: 1.rem;
+    color: #ffffff;
+    background-color: var(--atomblue);
+    border: none;
+    border-radius: 0.7rem;
+    cursor: pointer;
+    margin: 0.5rem;
+}
+
+.CardFooter button:hover {
+    
+    background-color: #0056b3;
+}
+
+.CardFooter button:nth-child(2) {
+    background-color: #ffc107;
+}
+
+.CardFooter button:nth-child(2):hover {
+    background-color: #cf9b00;
+}
+
+input[type="file"] {
+    display: block;
+    margin: 1rem auto;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.CardScrollContainer {
+    max-height: calc((100vh - 20vh) * 0.81); /* Set the maximum height of the scrollable container */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds height */
+    overflow-x: hidden; /* Disable horizontal scrolling */
+    padding-right: 1rem; /* Add padding for better appearance */
+  }
+  
+  .CardScrollContainer::-webkit-scrollbar {
+    width: 8px; /* Set width of the scrollbar */
+  }
+  
+  .CardScrollContainer::-webkit-scrollbar-thumb {
+    background-color: var(--atomblue); /* Scrollbar color */
+    border-radius: 4px; /* Rounded scrollbar edges */
+  }
+  
+  .CardScrollContainer::-webkit-scrollbar-thumb:hover {
+    background-color: #0056b3; /* Hover color for the scrollbar */
+  }
+  
+  .CardScrollContainer::-webkit-scrollbar-track {
+    background-color: #f4f4f9; /* Background color of the scrollbar track */
+  }
+  

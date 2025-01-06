@@ -1,8 +1,14 @@
 declare module '@iconscout/react-unicons' {
-    export const UilEstate: React.ComponentType<React.SVGAttributes<SVGElement>>;
-    export const UilApps: React.ComponentType<React.SVGAttributes<SVGElement>>;
-    export const UilClipboardAlt: React.ComponentType<React.SVGAttributes<SVGElement>>;
-    export const UilChart: React.ComponentType<React.SVGAttributes<SVGElement>>;
-    export const UilChartLine: React.ComponentType<React.SVGAttributes<SVGElement>>;
-    export const UilAnalysis: React.ComponentType<React.SVGAttributes<SVGElement>>;
+    interface IconProps extends React.SVGAttributes<SVGElement> {
+        size?: number;
+    }
+    export const UilEstate: React.ComponentType<IconProps>;
+    export const UilApps: React.ComponentType<IconProps>;
+    export const UilClipboardAlt: React.ComponentType<IconProps>;
+    export const UilChart: React.ComponentType<IconProps>;
+    export const UilChartLine: React.ComponentType<IconProps>;
+    export const UilAnalysis: React.ComponentType<IconProps>;
+    export const UilSignOutAlt: React.ComponentType<IconProps>;
+    export const UilUsersAlt: React.ComponentType<IconProps>;
+    export const UilUserCircle: React.ComponentType<IconProps>;
 } 

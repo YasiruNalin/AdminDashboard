@@ -1,0 +1,110 @@
+.Profile {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+    position: relative;
+    padding-top: 2rem;
+    padding-right: 0.5rem;
+    font-family: 'Sans-Serif', Arial, Helvetica, sans-serif;
+    
+}
+
+.ProfileWithUsername {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    position: relative;
+    font-weight: bold;
+    color: dimgrey;
+    transition: all 300ms ease;
+}
+
+.ProfileWithUsername:hover {
+    color: var(--atomblue);
+}
+
+.UsernameSection {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.Username {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--atomblue);
+    transition: color 300ms ease;
+}
+
+.Username:hover {
+    color: black;
+}
+
+/* Dropdown styles */
+.Dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 0.7rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    z-index: 1000;
+    overflow: hidden;
+    transition: all 300ms ease;
+}
+
+.Dropdown div {
+    padding: 0.7rem 1rem;
+    font-size: 0.8rem;
+    color: dimgrey;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.Dropdown div:hover {
+    background-color: var(--activeItem);
+    color: black;
+}
+
+/* Authentication buttons */
+.AuthButtons {
+    display: flex;
+    gap: 1rem;
+}
+
+.AuthButtons>button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.7rem;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+
+.SignInButton {
+    background-color: var(--atomblue);
+    color: white;
+}
+
+.SignInButton:hover {
+    background-color: #0056b3;
+}
+
+.SignUpButton {
+    background-color: var(--activeItem);
+    color: white;
+}
+
+.SignUpButton:hover {
+    background-color: #6c757d;
+}

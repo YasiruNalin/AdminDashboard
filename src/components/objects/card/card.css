@@ -4,7 +4,7 @@
     border-radius: 1rem;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 30%;
+    width: 25%;
     text-align: center;
     margin: 10px;
 }
@@ -23,5 +23,5 @@
 
 .CardChart {
     height: 150px;
-    width: 100%;
+    width: auto;
 }

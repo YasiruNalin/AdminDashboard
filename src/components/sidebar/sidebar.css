@@ -58,12 +58,12 @@
     cursor: pointer;
 }
 
-.active{
+.activeL{
     background: var(--activeItem);
     margin-left: 1rem;
     color:black;
 }
-.active::before{
+.activeL::before{
     content: '';
     width: 8px;
     height: inherit;
