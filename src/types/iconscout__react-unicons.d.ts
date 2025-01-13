@@ -11,4 +11,6 @@ declare module '@iconscout/react-unicons' {
     export const UilSignOutAlt: React.ComponentType<IconProps>;
     export const UilUsersAlt: React.ComponentType<IconProps>;
     export const UilUserCircle: React.ComponentType<IconProps>;
+    export const  UilPaperclip: React.ComponentType<IconProps>;
+
 } 

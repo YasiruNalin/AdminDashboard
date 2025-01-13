@@ -1,0 +1,25 @@
+[
+    {
+        "id": 1,
+        "title": "WebStylePress",
+        "tech" : [
+            {
+                "name": "JavaScript"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "2WebStylePress",
+        "tech" : [
+            {
+                "name": "React"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Rumesh"
+        
+    }
+]

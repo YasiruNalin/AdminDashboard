@@ -63,12 +63,13 @@ export const MenuItems = [
                     subName: "Applicable Parameters"
                 },
             ], link: "#saved-scenarios" },
+            { name: "My Scenarios", link: "#new-scenario" },
         ],
     },
     {
         heading: "Analysis",
         items: [
-            { name: "Graphs", link: "#graphs" },
+            { name: "Chatbot", link: "#graphs" },
             { name: "Trends", link: "#trends" },
         ],
     },

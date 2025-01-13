@@ -59,7 +59,10 @@
     transition: all 200ms ease;
     background: var(--inactiveSubItem, transparent); /* Fallback for inactive items */
 }
-
+.activeSubItem{
+    background: var(--atomblue);
+    color: black;
+}
 .SubSubMenuItem:hover {
     cursor: pointer;
     background: var(--hoverSubItem, #f1f1f1);
